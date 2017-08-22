@@ -1,0 +1,7 @@
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (min-width: $mobile) {
+      @content;
+    }
+  }
+}
